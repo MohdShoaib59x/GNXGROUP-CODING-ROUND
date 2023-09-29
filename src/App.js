@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import Hero from "./components/Hero";
+import Hero1 from "./components/Hero1";
+import Hero2 from "./components/Hero2";
+import Navbar from "./components/Navbar";
+import Founders from "./components/Founders";
+import Poplar from "./components/Poplar";
+import Footer from "./components/Footer";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <section>
+      <Navbar />
+      <Hero />
+      <Hero1 />
+      <Hero2 />
+      <Founders />
+      <Poplar />
+      <h4 className="w-9/12 mx-auto text-5xl py-20">
+        Meet the experts and Revolutionise your sales performance in{" "}
+        <b>14 Days</b>
+      </h4>
+      <Footer />
+    </section>
   );
 }
-
-export default App;
